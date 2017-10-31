@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Abel|Bungee+Hairline');
+
+
+
 /* ==========================================================================
    Base styles:
    ========================================================================== */
@@ -10,96 +14,100 @@
    /* Fix for responsive images */
    img {
    	max-width: 100%;
+   	min-width: 160px;
    }
 
-   body {
-   		//baseline font
-   		//
+   h1 {
+   	font-family: 'Bungee Shade';
+   	font-weight:500;
+   	font-size: 4vw;
+   	width: 100%;
+   	line-height: 105%;
+   	word-break: break-all;
+   	margin-top: 12px;
+   	margin-bottom: 10px;
    }
 
-   a {
+   .sub-header-container{
+   	margin-top: 15px;
+   	display: flex;
+   	justify-content: space-around;
+   }
+
+   .subhead {
    	text-decoration: none;
+   	font-family: 'Abel';
+   	font-size: 16px;
    }
 
-   .nav {
-   	height: 30px;
-   	text-align: left;
-   	align-self: end;
-   }
-
-   .right {
-   	margin-left:auto;
-   }
-
-   .item {  /*temporary*/
-   	background-color: cornsilk;
-   	min-width: 150px;  
-   }
-
+   /*Base styles and layout for grid container*/
    .container {
    	display: grid;
-   	height: 100%;
+   	width: 50%;
    	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   	grid-template-rows: 30px 1fr 1fr 1fr 1fr;
+   	grid-template-rows: 130px 130px 130px 130px 130px 130px;
 
    	/*Defines the state of the project tile images in grid format*/
    	grid-template-areas: 
-   	"name name work cv about-me"
-   	"proj-1 proj-1 col-box-1 proj-4 proj-7"
-   	"proj-1 proj-1 proj-3 proj-3 col-box-2"
+   	"nav nav col-box-1 proj-4 proj-7"
+   	"nav nav proj-3 proj-3 col-box-2"
    	"col-box-3 proj-2 proj-3 proj-3 proj-6"
-   	"proj-5 proj-5 proj-8 col-box-4 proj-6";
-
-   	/*align-items: stretch;*/
+   	"proj-5 proj-5 proj-8 col-box-4 proj-6"
+   	"col-box-5 col-box-6 proj-8 proj-9 proj-9"
+   	"col-box-7 col-box-8 col-box-9 proj-9 proj-9";
 
    	/*Margins and gutters*/
    	grid-gap: 10px; 
-   	margin-left:200px;
-   	margin-right:200px;
+   	margin: auto;
+   	margin-top:30px;
+   }
+
+   /*Base styles for grid-container items*/
+   .item { 
+   	background-color: gray;
+   	background-size: auto 100%;
+   	overflow: hidden;
+   	box-shadow: -1px 3px 10px #888888;;
    }
 
 /*Names the grid areas which correspond to the class definition 
 referred to by the html*/
 
-.name {
-	grid-area: name;
-}
-
-
-.work {
-	grid-area: work;
-}
-
-.about-me {
-	grid-area: about-me;
-}
-
-.cv {
-	grid-area: cv;
-}
-
-.proj-1 {
-	grid-area: proj-1;
+.nav {
+	height:85%;
+	width:83%;
+	align-self: center;
+	justify-content: center;
+	grid-area: nav;
+	background-color: white;
+	text-align: center;
+	margin: auto;
 }
 
 .proj-2 {
 	grid-area: proj-2;
+	background-color: white;
+
 }
 
 .proj-3 {
 	grid-area: proj-3;
+	background-color: #f45e60;
 }
 
 .proj-4 {
 	grid-area: proj-4;
+	backgorund-color:#a8a78b;
 }
 
 .proj-5 {
 	grid-area: proj-5;
+	background-color: #160300;
 }
 
 .proj-6 {
 	grid-area: proj-6;
+	background-color:#ebece7;
 }
 
 .proj-7 {
@@ -108,91 +116,221 @@ referred to by the html*/
 
 .proj-8 {
 	grid-area: proj-8;
+	background-color: white;
+}
+
+.proj-9 {
+	grid-area: proj-9;
 }
 
 .col-box-1 {
 	grid-area: col-box-1;
-
+	background-color: #fb4c70;
 }
 
 .col-box-2 {
 	grid-area: col-box-2;
+	background-color: #6fcf97;
 }
 
 .col-box-3 {
 	grid-area: col-box-3;
+	background-color: #FBE14C;
 }
 
 .col-box-4 {
 	grid-area: col-box-4;
+	background-color: #4CBBF2;
 }
 
+.col-box-5 {
+	grid-area: col-box-5;
+}
+
+.col-box-6 {
+	grid-area: col-box-6;
+	background-color: #6FCFC5;
+}
+
+.col-box-7 {
+	grid-area: col-box-7;
+}
+
+.col-box-8 {
+	grid-area: col-box-8;
+}
+
+.col-box-9 {
+	grid-area: col-box-9;
+}
+
+p {
+	font-family: Abel;
+	text-align: center;
+}
 
 /*======================================
 	Responsive Sizing 
-=======================================*/
+	=======================================*/
 
 
 	/* For larger screens */
 
 	/*Defines the state of the project tile images in larger grid format*/
-	@media screen and (max-width: 1200px) {
-		.l {
-			margin-left: 100px;
-			margin-right: 100px;
-			grid-template-areas: 
-			"name name work cv about-me"
-			"proj-1 proj-1 col-box-1 proj-4 proj-7"
-			"proj-1 proj-1 proj-3 proj-3 col-box-2"
-			"col-box-3 proj-2 proj-3 proj-3 proj-6"
-			"proj-5 proj-5 proj-8 col-box-4 proj-6";
-		}
-	}
+	@media screen and (max-width: 1500px) {
 
+		.col-box-7, .col-box-5 {
+			display:none;
+		}
+
+		.container {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 120px 120px 120px 120px 120px 120px;
+			grid-template-areas: 
+			"nav nav col-box-1 proj-4"
+			"nav nav proj-3 proj-3"
+			"col-box-3 proj-2 proj-3 proj-3"
+			"proj-5 proj-5 proj-8 col-box-4"
+			"proj-7 col-box-6 proj-8 proj-6"
+			"col-box-2 proj-9 proj-9 proj-6"
+			"col-box-9 proj-9 proj-9 col-box-8"
+			;
+		}
+
+		.nav {
+			height:70%;
+		}
+
+		h1 { 
+			width: 75%;
+			margin:auto;
+			font-size: 4vw;
+			margin-top: 12px;
+			margin-bottom: 10px;
+		}
+
+	}
+	
 	/* For medium screens */
-	@media screen and (max-width: 860px) {
-		/*Hides the color boxes and boxes with page links*/
-		.col-box-4,.col-box-3,.col-box-2,.col-box-1 {
-			display:none;
+	@media screen and (max-width: 1000px) {
+
+		.col-box-8 {
+			display: none;
 		}
 
-		.m {	
-			margin-left: 10px;
-			margin-right: 10px;
-			grid-template-columns: 1fr 1fr 1fr 1fr; 
+		.container {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
 			grid-template-areas: 
-			"name work cv about-me"
-			"proj-1 proj-1 proj-4 proj-7"
-			"proj-1 proj-1 proj-3 proj-3"
-			"proj-6 proj-8 proj-3 proj-3"
-			"proj-6 proj-2 proj-5 proj-5";
+			"nav nav"
+			"col-box-3 proj-4"
+			"proj-5 proj-5"
+			"proj-2 col-box-1"
+			"proj-3 proj-3"
+			"proj-3 proj-3"
+			"col-box-4 proj-6"
+			"proj-8 proj-6"
+			"proj-8 col-box-2"
+			"proj-9 proj-9"
+			"proj-9 proj-9"
+			"proj-7 col-box-6"
+			"col-box-9 col-box-7";
+		}
+
+		.nav {
+			margin: 0 auto;
+			width:100%;
+			height:100%;
+		}
+
+		h1 {
+			width:100%;
+			margin:0 auto;
+			font-size:40pt;
+		}
+
+	}
+
+
+	/*For small screens!*/
+
+	@media screen and (max-width: 600px){
+
+		.col-box-3,.col-box-1,.col-box-4,.col-box-2,.col-box-6,.col-box-9,.col-box-7 {
+			display:none;
+		}
+		.container {
+			margin: auto;
+			width:90%;
+
+			grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+			grid-template-areas: 
+			"nav nav"
+			"nav nav"
+			"proj-4 proj-4"
+			"proj-4 proj-4"
+			"proj-5 proj-5"
+			"proj-2 proj-2"
+			"proj-2 proj-2"
+			"proj-3 proj-3"
+			"proj-3 proj-3"
+			"proj-8 proj-6"
+			"proj-8 proj-6"
+			"proj-9 proj-9"
+			"proj-9 proj-9"
+			"proj-7 col-box-9";	
+		}
+
+		.nav {
+			width:80%;
+			height:70%;
+		}
+
+		h1 {
+			font-size:18vw;
 		}
 	}
 
-	/* For small screens */
-	@media screen and (max-width: 600px) {
 
-		/*Hides the color boxes and boxes with page links and nav items*/
-		.proj-7,.proj-8,.name,.work,.cv,.about-me {
-			display:none;
-		}
+/*Defines a gray cover message that will show when the width of the viewport 
+is too small*/
 
-		/*reformats the grid to make individual projects span width of screen*/
-		.s {
-			grid-auto-rows: 1fr; 
-			grid-template-areas: 
-			"proj-1 proj-1 proj-1 proj-1 proj-1"
-			"proj-1 proj-1 proj-1 proj-1 proj-1"
-			"proj-2 proj-2 proj-2 proj-2 proj-2"
-			"proj-2 proj-2 proj-2 proj-2 proj-2"
-			"proj-3 proj-3 proj-3 proj-3 proj-3"
-			"proj-3 proj-3 proj-3 proj-3 proj-3"
-			"proj-4 proj-4 proj-4 proj-4 proj-4"
-			"proj-4 proj-4 proj-4 proj-4 proj-4"
-			"proj-5 proj-5 proj-5 proj-5 proj-5"
-			"proj-5 proj-5 proj-5 proj-5 proj-5"
-			"proj-6 proj-6 proj-6 proj-6 proj-6"
-			"proj-6 proj-6 proj-6 proj-6 proj-6";
-		}
+
+#too-small {
+	background-color: #333333;
+	line-height: 1.5;
+	opacity: .98;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:fixed;
+	display:none;
+	transition: all 300ms ease-in;
+} 
+
+#error-message {
+	font-family:'Bungee Hairline';
+	color: #F46868;
+	font-size: 65pt;
+	width:95%;
+	margin: 20px auto;
+	letter-spacing: -10px;
+}
+
+#alert {
+	font-family:'Bungee Shade';
+	color: #F46868;
+	font-size: 72pt;
+	width:95%;
+	margin: 50px auto;
+}
+
+
+/*Screen too small message*/
+
+@media screen and (max-width: 430px){
+	#too-small {
+		display:block;
 	}
 }
