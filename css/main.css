@@ -48,7 +48,7 @@
    	grid-template-rows: 130px 130px 130px 130px 130px 130px;
 
    	/*Defines the state of the project tile images in grid format*/
-   	grid-template-areas: 
+   	grid-template-areas:
    	"nav nav col-box-1 proj-4 proj-7"
    	"nav nav proj-3 proj-3 col-box-2"
    	"col-box-3 proj-2 proj-3 proj-3 proj-6"
@@ -57,20 +57,20 @@
    	"col-box-7 col-box-8 col-box-9 proj-9 proj-9";
 
    	/*Margins and gutters*/
-   	grid-gap: 10px; 
+   	grid-gap: 10px;
    	margin: auto;
    	margin-top:30px;
    }
 
    /*Base styles for grid-container items*/
-   .item { 
+   .item {
    	background-color: gray;
    	background-size: auto 100%;
    	overflow: hidden;
    	box-shadow: -1px 3px 10px #888888;;
    }
 
-/*Names the grid areas which correspond to the class definition 
+/*Names the grid areas which correspond to the class definition
 referred to by the html*/
 
 .nav {
@@ -170,14 +170,14 @@ p {
 }
 
 /*======================================
-	Responsive Sizing 
+	Responsive Sizing
 	=======================================*/
 
 
 	/* For larger screens */
 
 	/*Defines the state of the project tile images in larger grid format*/
-	@media screen and (max-width: 1500px) {
+	@media screen and (max-width: 1280px) {
 
 		.col-box-7, .col-box-5 {
 			display:none;
@@ -186,7 +186,7 @@ p {
 		.container {
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			grid-template-rows: 120px 120px 120px 120px 120px 120px;
-			grid-template-areas: 
+			grid-template-areas:
 			"nav nav col-box-1 proj-4"
 			"nav nav proj-3 proj-3"
 			"col-box-3 proj-2 proj-3 proj-3"
@@ -201,7 +201,7 @@ p {
 			height:70%;
 		}
 
-		h1 { 
+		h1 {
 			width: 75%;
 			margin:auto;
 			font-size: 4vw;
@@ -210,9 +210,9 @@ p {
 		}
 
 	}
-	
+
 	/* For medium screens */
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 1024px) {
 
 		.col-box-8 {
 			display: none;
@@ -221,7 +221,7 @@ p {
 		.container {
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
-			grid-template-areas: 
+			grid-template-areas:
 			"nav nav"
 			"col-box-3 proj-4"
 			"proj-5 proj-5"
@@ -254,7 +254,7 @@ p {
 
 	/*For small screens!*/
 
-	@media screen and (max-width: 600px){
+	@media screen and (max-width: 640px){
 
 		.col-box-3,.col-box-1,.col-box-4,.col-box-2,.col-box-6,.col-box-9,.col-box-7 {
 			display:none;
@@ -264,7 +264,7 @@ p {
 			width:90%;
 
 			grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
-			grid-template-areas: 
+			grid-template-areas:
 			"nav nav"
 			"nav nav"
 			"proj-4 proj-4"
@@ -278,7 +278,7 @@ p {
 			"proj-8 proj-6"
 			"proj-9 proj-9"
 			"proj-9 proj-9"
-			"proj-7 col-box-9";	
+			"proj-7 col-box-9";
 		}
 
 		.nav {
@@ -292,7 +292,7 @@ p {
 	}
 
 
-/*Defines a gray cover message that will show when the width of the viewport 
+/*Defines a gray cover message that will show when the width of the viewport
 is too small*/
 
 
@@ -307,7 +307,7 @@ is too small*/
 	position:fixed;
 	display:none;
 	transition: all 300ms ease-in;
-} 
+}
 
 #error-message {
 	font-family:'Bungee Hairline';
@@ -333,4 +333,98 @@ is too small*/
 	#too-small {
 		display:block;
 	}
+}
+
+
+/*======================================
+	Project Pages Style
+=======================================*/
+.project-margins {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.text-project {
+  margin: 0;
+  text-align: left;
+  line-height: 150%;
+  font-size: 18px;
+  color: #828282;
+  opacity: 0.8;
+}
+
+.project-container {
+  width: 65%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-header {
+  display: flex;
+}
+
+.project-header-title {
+  width: 35%;
+  /*width: 325px;*/
+  /*height: 160px;*/
+  padding-bottom: 10px;
+  border-bottom: 14px solid #FBE14C;
+}
+
+.project-header-description {
+  width: 65%;
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 130%;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.project-header-info {
+  display: flex;
+  margin-top: 50px;
+}
+
+.info-content {
+  flex-grow: 1;
+}
+
+h3 {
+  margin: 0;
+  color: #000000;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.project-role {
+  width: 35%;
+}
+.project-year {
+  width: 30%;
+  margin-left: 50px;
+}
+.project-tags {
+  width: 35%;
+}
+
+.project-prompt {
+  width: 100%;
+  background-color: #ECEAEA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.text-project-prompt {
+  width: 50%;
+  margin: auto;
+  color: #000000;
+  font-size: 30px;
+  line-height: 150%;
+  padding: 50px 0 50px 0;
 }
