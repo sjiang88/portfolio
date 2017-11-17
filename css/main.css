@@ -43,7 +43,7 @@
    /*Base styles and layout for grid container*/
    .container {
    	display: grid;
-   	width: 50%;
+   	width: 55%;
    	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    	grid-template-rows: 130px 130px 130px 130px 130px 130px;
 
@@ -333,98 +333,4 @@ is too small*/
 	#too-small {
 		display:block;
 	}
-}
-
-
-/*======================================
-	Project Pages Style
-=======================================*/
-.project-margins {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.text-project {
-  margin: 0;
-  text-align: left;
-  line-height: 150%;
-  font-size: 18px;
-  color: #828282;
-  opacity: 0.8;
-}
-
-.project-container {
-  width: 65%;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.project-header {
-  display: flex;
-}
-
-.project-header-title {
-  width: 35%;
-  /*width: 325px;*/
-  /*height: 160px;*/
-  padding-bottom: 10px;
-  border-bottom: 14px solid #FBE14C;
-}
-
-.project-header-description {
-  width: 65%;
-  flex-grow: 1;
-  margin-left: 50px;
-}
-
-h2 {
-  margin: 0;
-  padding: 0;
-  line-height: 130%;
-  font-size: 36px;
-  font-weight: normal;
-}
-
-.project-header-info {
-  display: flex;
-  margin-top: 50px;
-}
-
-.info-content {
-  flex-grow: 1;
-}
-
-h3 {
-  margin: 0;
-  color: #000000;
-  font-size: 22px;
-  font-weight: normal;
-  margin-bottom: 10px;
-}
-.project-role {
-  width: 35%;
-}
-.project-year {
-  width: 30%;
-  margin-left: 50px;
-}
-.project-tags {
-  width: 35%;
-}
-
-.project-prompt {
-  width: 100%;
-  background-color: #ECEAEA;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: left;
-}
-
-.text-project-prompt {
-  width: 50%;
-  margin: auto;
-  color: #000000;
-  font-size: 30px;
-  line-height: 150%;
-  padding: 50px 0 50px 0;
 }
