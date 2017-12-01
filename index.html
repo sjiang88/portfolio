@@ -1,87 +1,151 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sarah Jiang | Home</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<title>Portfolio Site | Sarah Jiang</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+	
+	<!--header w/ background image and parallax-->
+	<header>
 
-<div id="too-small">
-    <h1 id="alert">Oops!</h1>
-    <h2 id="error-message">Your screen is too small</h2>
-</div>
+		<!-- <img src="../img/main-splash.png"> -->
+		<!--nav--> 
+		<nav>
+			<a class="special-white" id="nav-link" href="me.html">About</a>
+			<a class="special-white" id="nav-link" href="">Resume</a>
+			<a class="special-white" id="nav-link" href="">Contact</a>
+		</nav>
 
-    <!--make a grid of items-->
-    <div class="container">
+		<div id="header-text">
+			<h1 class="special-white">Hi, my name</br> is <span>Sarah</span>.</h1>
+			<p class="special-white">I'm a human-centered designer.</p>
+		</div>
 
-         <div class="nav">
-            <h1>#Projects</h1>
-            
-            <div class="sub-header-container">  <!--to display flex-->
-                <a class="subhead" href="index.html">Home</a>
-                <a class="subhead" href="cv.html">Resume</a>
-                <a class="subhead" href="me.html">About</a>
-            </div>
-          </div>
+		<!--vertical yellow emphasis line-->
+		<div class="vertical vertical-top">
+		</div>
 
-          <div class="proj-2 item">
-            <img src="img/two-hearts.JPG" alt="two people with hearts holding hands">
-          </div>
+	</header>
 
-          <div class="proj-3 item">
-            <img src="img/peaches-2.jpg" alt="peach">
-          </div>
+	<!--div with subheader intro text + previous work experience box-->
+	<div class="subhead-wrapper">
+		
+		<p class="subhead">I am a qualitative design researcher with a diverse storytelling tool-kit&mdash;based in San Francisco, CA. </br>Check out some of my projects <a id="caret" href="#P">&#9660;</a>. </br></br>More about me <a href="me.html">here</a>.</p>
 
-    <div class="proj-4 item">
-     <img src="img/stroke.jpg" alt="two hearts">
- </div>
+		<div class="subhead-emphasis-wrapper">
+			<div class="subhead-emphasis">
+				<p>::previously</p>
+				<h2>Stanford School of Medicine</h2>
+				<h2>IDEO CoLab</h2>
+			</div>
 
- <div class="proj-5 item">
-     <img src="img/360vr_movie_2.png" alt="360 film footage">
- </div>
+		</div>
 
- <div class="proj-6 item">
-     <img src="img/soundings.jpg" alt="woman holding colorful cards">
- </div>
+	</div>
 
- <div class="proj-7 item"> 
-     <img src="" alt="tba">
- </div>
+	<!--edge to edge grid to display projects with 3 columns and 4 rows-->
+	<div class="wrapper">
+		<div id="P" class="project-container">
 
- <div class="proj-8 item">
-    <img src="img/labyrinth-6.jpg" alt="360 film footage">
-</div>
+			<div class="proj-1 overlay-wrapper">
+				<div class="overlay"> <!--this overlay disappears on hover-->
+					<div class="proj-wrapper-sm">
+						<p class="special-white proj-text">Peaches newborn and maternal health</p>
+						<div class="underline"></div>
+						<p class="proj-category">:::App Concept</p>
+					</div>
+				</div>
+				<img src="img/peaches-square.png" alt="two phones on pink background">
+			</div>
+
+			<div class="proj-2 item overlay-wrapper">
+				<div class="overlay">
+					<div class="proj-wrapper-lg">
+						<p class="special-white proj-text">Community soundings wall</p>
+						<div class="underline"></div>
+						<p class="proj-category">:::Experience</p>
+					</div>
+				</div>
+				<img src="img/soundings-wall-2.png" alt="woman inspecting cards attached to wall">
+			</div>
+
+			<div class="proj-3 item overlay-wrapper">
+				<div class="overlay">
+					<div class="proj-wrapper-lg">
+						<p class="special-white proj-text">Depression: 1,2,3</br>a radio story</p>
+						<div class="underline"></div>
+						<p class="proj-category">:::Storytelling</p>
+					</div>
+				</div>
+				<img src="img/mom-rect.png" alt="woman sitting posing in front of sydney harbor bridge">
+			</div>
+
+			<div class="proj-4 item overlay-wrapper">
+				<div class="overlay">
+					<div class="proj-wrapper-sm">
+						<p class="special-white proj-text">Stroke tracker</br> project</p>
+						<div class="underline"></div>
+						<p class="proj-category">:::Design Research</p>
+					</div>
+				</div>
+				<img src="img/stroke_call_colcorr.png" alt="doctor and nurse tending to patient on bed">
+			</div>
+
+			<div class="proj-5 item overlay-wrapper">
+				<div class="overlay">
+					<div class="overlay">
+						<div class="proj-wrapper-sm">
+							<p class="special-white proj-text">Storytelling for 360&deg; worlds</p>
+							<div class="underline"></div>
+							<p class="proj-category">:::Opinion</p>
+						</div>
+					</div>
+				</div>
+				<img src="img/vr-cam.png" alt="camera with many eyes">
+			</div>
+
+			<div class="proj-6 item overlay-wrapper">
+				<div class="overlay">
+					<div class="proj-wrapper-lg">
+						<p class="special-white proj-text">Where's the beef?</br>a film in 360&deg; 1,2,3</br>a radio story</p>
+						<div class="underline"></div>
+						<p class="proj-category">:::Storytelling</p>
+					</div>
+				</div>
+				<img src="img/360vr-collab.png" alt="people sitting around desk">
+			</div>
 
 
-<div class="proj-9 item">
-    <img src="" alt="tba">
-</div>
+			<!--sitemap and footer-->
 
-<!--COLOR BOXES-->
-<div class="col-box-1 item"></div>
-<div class="col-box-2 item"></div>
-<div class="col-box-3 item"></div>
-<div class="col-box-4 item"></div>
-<div class="col-box-5"></div>
-<div class="col-box-6 item"></div>
-<div class="col-box-7"></div>
-<div class="col-box-8"></div>
-<div class="col-box-9"><p>&copy; 2018 Sarah Jiang</p></div>
+			<div class="copyri">
+				<p>&copy; 2018 Sarah Jiang</br>all rights reserved</p>
+			</div>
 
-</div>
+			<div class="site-n">
+				<div class="site-n-wrapper">
+					<a href="">Contact</a>
+					<a href="">Resume</a>
+					<a href="me.html">About</a>
+				</div>
+			</div>
+		</div>
 
-<script src="js/vendor/jquery-1.12.0.min.js"></script>
-<script src="js/main.js"></script>
+		<div class="vertical vertical-bottom">
+		</div>
+	</div>
 
 </body>
 </html>

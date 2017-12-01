@@ -1,336 +1,300 @@
 
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Abel|Bungee+Hairline');
+@import url('https://fonts.googleapis.com/css?family=Abel|Fjord+One|Mate');
+
+/*---------------Base styles----------------*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin:0;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+}
+
+img {
+	width:100%;
+}
+
+h1 {
+	font-family: Fjord One;
+	font-size:64pt;
+	line-height:110%;
+}
+
+h2 {
+	font-family: Fjord One;
+	font-size:22pt;
+	margin-bottom: 30px;
+}
+
+a,p {
+	color:#4F4F4F;
+
+	font-family: Abel;
+	font-size:24pt;
+}
+
+a {
+	text-decoration: underline;
+	transition: all .5s ease;
+}
+
+#caret {
+	text-decoration: none;
+	font-size: 18pt;
+}
+
+a:hover {
+	color:#36E0A1;
+}
+
+span {
+	color:#36E0A1;
+}
+
+nav {
+	display:flex;
+	justify-content: flex-end;
+
+	padding-top: 15px;
+	margin-right: 40px;
+}
+
+header {
+	background-image: url("../img/main-splash.png");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height:100vh;
+}
+
+/*---------------Specific styles----------------*/
+
+.special-white {
+	color:#FFFFFF;
+}
+
+#nav-link {
+	text-decoration: none;
+	margin-top:4px;
+	margin-bottom:4px;
+	margin-left:20px;
+	margin-right:20px;
+
+	padding-bottom:3px;	
+
+	border-bottom: 7px solid #FFFFFF;
+
+	font-size:16pt;
+	text-transform: capitalize;
+
+	 
+}
+
+/*mouse-over hover effect for navigation links*/
+#nav-link:hover {
+	color:#36E0A1; /*teal*/
+	border-color: #36E0A1;
+}
+
+#header-text {
+	margin-top:53vh;
+	margin-left:80px;
+}
+
+/*----------yellow emphasis stripes-------------*/
+
+.vertical {
+	position:absolute;
+	background-color: #FBE14C;
+	width:10px;
+	height: 100vh;
+}
+
+.vertical-top {
+	left: 0;
+    top: 350px;
+}
+
+.vertical-bottom {
+	right:0;
+	bottom:0;
+}
+
+.wrapper {
+	position:relative;
+}
+
+/*------Defines the subheader under the main splash----------*/
+
+.subhead-wrapper {
+	display:flex;
+}
+
+.subhead {
+	margin-left: 80px;
+	margin-right:30px;
+	margin-top:45px;
+	width:45%;
+	color: #4F4F4F; /*gray*/
+}
+
+.subhead-emphasis-wrapper {
+	background-color: #FBE14C;
+	margin-top:15px;
+	margin-left:60px;
+	margin-bottom:17px;  /*controls the H of subhead section*/
+	padding-bottom:40px;
+	width: 50%;
+}
+;
+.subhead-emphasis p{
+	color: #4F4F4F;
+}
+
+.subhead-emphasis {
+	padding-left:80px;
+}
+
+/*-------Base styles and layout for grid container----------*/
+.project-container {
+	display:grid;
+	/*align-items: center;*/
+	justify-content: stretch;
+	overflow: hidden;
+
+	width:100%;
+
+	grid-template-rows:540px 540px 540px 540px; 
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr; /*6-column layout*/
+
+	/*Defines the state of the project tile images in grid format*/
+	grid-template-areas: 
+	"proj-1 proj-1 proj-2 proj-2 proj-2 proj-2"
+	"proj-3 proj-3 proj-3 proj-3 proj-4 proj-4"
+	"proj-5 proj-5 proj-6 proj-6 proj-6 proj-6"
+	"copyri	copyri site-n site-n site-n site-n";
+
+	/*Margins and gutters*/
+	
+}
 
 
-
-/* ==========================================================================
-   Base styles:
-   ========================================================================== */
-   /* Fix to include padding and border in the total width for each element */
-   * {
-   	box-sizing: border-box;
-   }
-
-   /* Fix for responsive images */
-   img {
-   	max-width: 100%;
-   	min-width: 160px;
-   }
-
-   h1 {
-   	font-family: 'Bungee Shade';
-   	font-weight:500;
-   	font-size: 4vw;
-   	width: 100%;
-   	line-height: 105%;
-   	word-break: break-all;
-   	margin-top: 12px;
-   	margin-bottom: 10px;
-   }
-
-   .sub-header-container{
-   	margin-top: 15px;
-   	display: flex;
-   	justify-content: space-around;
-   }
-
-   .subhead {
-   	text-decoration: none;
-   	font-family: 'Abel';
-   	font-size: 16px;
-   }
-
-   /*Base styles and layout for grid container*/
-   .container {
-   	display: grid;
-   	width: 55%;
-   	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   	grid-template-rows: 130px 130px 130px 130px 130px 130px;
-
-   	/*Defines the state of the project tile images in grid format*/
-   	grid-template-areas:
-   	"nav nav col-box-1 proj-4 proj-7"
-   	"nav nav proj-3 proj-3 col-box-2"
-   	"col-box-3 proj-2 proj-3 proj-3 proj-6"
-   	"proj-5 proj-5 proj-8 col-box-4 proj-6"
-   	"col-box-5 col-box-6 proj-8 proj-9 proj-9"
-   	"col-box-7 col-box-8 col-box-9 proj-9 proj-9";
-
-   	/*Margins and gutters*/
-   	grid-gap: 10px;
-   	margin: auto;
-   	margin-top:30px;
-   }
-
-   /*Base styles for grid-container items*/
-   .item {
-   	background-color: gray;
-   	background-size: auto 100%;
-   	overflow: hidden;
-   	box-shadow: -1px 3px 10px #888888;;
-   }
-
-/*Names the grid areas which correspond to the class definition
-referred to by the html*/
-
-.nav {
-	height:85%;
-	width:83%;
-	align-self: center;
-	justify-content: center;
-	grid-area: nav;
-	background-color: white;
-	text-align: center;
-	margin: auto;
+/*--------Assign classes to grid-areas defined above---------*/
+.proj-1 {
+	grid-area: proj-1;
 }
 
 .proj-2 {
 	grid-area: proj-2;
-	background-color: white;
-
 }
 
 .proj-3 {
 	grid-area: proj-3;
-	background-color: #f45e60;
 }
 
 .proj-4 {
 	grid-area: proj-4;
-	backgorund-color:#a8a78b;
 }
 
 .proj-5 {
 	grid-area: proj-5;
-	background-color: #160300;
 }
 
 .proj-6 {
 	grid-area: proj-6;
-	background-color:#ebece7;
 }
 
-.proj-7 {
-	grid-area: proj-7;
+.copyri{
+	grid-area: copyri;
 }
 
-.proj-8 {
-	grid-area: proj-8;
-	background-color: white;
+.copyri p{
+	text-align: right;
+	margin-right:30px;
 }
 
-.proj-9 {
-	grid-area: proj-9;
+.site-n {
+	background-color: #DAE0DC;
+	grid-area: site-n;
 }
 
-.col-box-1 {
-	grid-area: col-box-1;
-	background-color: #fb4c70;
+.site-n-wrapper {
+	margin-left:30px;
+	margin-top:30px;
 }
 
-.col-box-2 {
-	grid-area: col-box-2;
-	background-color: #6fcf97;
-}
+.site-n-wrapper a{
+	display:block;
 
-.col-box-3 {
-	grid-area: col-box-3;
-	background-color: #FBE14C;
-}
-
-.col-box-4 {
-	grid-area: col-box-4;
-	background-color: #4CBBF2;
-}
-
-.col-box-5 {
-	grid-area: col-box-5;
-}
-
-.col-box-6 {
-	grid-area: col-box-6;
-	background-color: #6FCFC5;
-}
-
-.col-box-7 {
-	grid-area: col-box-7;
-}
-
-.col-box-8 {
-	grid-area: col-box-8;
-}
-
-.col-box-9 {
-	grid-area: col-box-9;
-}
-
-p {
 	font-family: Abel;
-	text-align: center;
+	font-size: 24pt;
+	text-decoration: none;
+	text-transform:uppercase;
+	color:#4F4F4F;
+
+	margin-bottom:35px;
 }
 
-/*======================================
-	Responsive Sizing
-	=======================================*/
-
-
-	/* For larger screens */
-
-	/*Defines the state of the project tile images in larger grid format*/
-	@media screen and (max-width: 1280px) {
-
-		.col-box-7, .col-box-5 {
-			display:none;
-		}
-
-		.container {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			grid-template-rows: 120px 120px 120px 120px 120px 120px;
-			grid-template-areas:
-			"nav nav col-box-1 proj-4"
-			"nav nav proj-3 proj-3"
-			"col-box-3 proj-2 proj-3 proj-3"
-			"proj-5 proj-5 proj-8 col-box-4"
-			"proj-7 col-box-6 proj-8 proj-6"
-			"col-box-2 proj-9 proj-9 proj-6"
-			"col-box-9 proj-9 proj-9 col-box-8"
-			;
-		}
-
-		.nav {
-			height:70%;
-		}
-
-		h1 {
-			width: 75%;
-			margin:auto;
-			font-size: 4vw;
-			margin-top: 12px;
-			margin-bottom: 10px;
-		}
-
-	}
-
-	/* For medium screens */
-	@media screen and (max-width: 1024px) {
-
-		.col-box-8 {
-			display: none;
-		}
-
-		.container {
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
-			grid-template-areas:
-			"nav nav"
-			"col-box-3 proj-4"
-			"proj-5 proj-5"
-			"proj-2 col-box-1"
-			"proj-3 proj-3"
-			"proj-3 proj-3"
-			"col-box-4 proj-6"
-			"proj-8 proj-6"
-			"proj-8 col-box-2"
-			"proj-9 proj-9"
-			"proj-9 proj-9"
-			"proj-7 col-box-6"
-			"col-box-9 col-box-7";
-		}
-
-		.nav {
-			margin: 0 auto;
-			width:100%;
-			height:100%;
-		}
-
-		h1 {
-			width:100%;
-			margin:0 auto;
-			font-size:40pt;
-		}
-
-	}
-
-
-	/*For small screens!*/
-
-	@media screen and (max-width: 640px){
-
-		.col-box-3,.col-box-1,.col-box-4,.col-box-2,.col-box-6,.col-box-9,.col-box-7 {
-			display:none;
-		}
-		.container {
-			margin: auto;
-			width:90%;
-
-			grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
-			grid-template-areas:
-			"nav nav"
-			"nav nav"
-			"proj-4 proj-4"
-			"proj-4 proj-4"
-			"proj-5 proj-5"
-			"proj-2 proj-2"
-			"proj-2 proj-2"
-			"proj-3 proj-3"
-			"proj-3 proj-3"
-			"proj-8 proj-6"
-			"proj-8 proj-6"
-			"proj-9 proj-9"
-			"proj-9 proj-9"
-			"proj-7 col-box-9";
-		}
-
-		.nav {
-			width:80%;
-			height:70%;
-		}
-
-		h1 {
-			font-size:18vw;
-		}
-	}
-
-
-/*Defines a gray cover message that will show when the width of the viewport
-is too small*/
-
-
-#too-small {
-	background-color: #333333;
-	line-height: 1.5;
-	opacity: .98;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	position:fixed;
-	display:none;
-	transition: all 300ms ease-in;
-}
-
-#error-message {
-	font-family:'Bungee Hairline';
-	color: #F46868;
-	font-size: 65pt;
-	width:95%;
-	margin: 20px auto;
-	letter-spacing: -10px;
-}
-
-#alert {
-	font-family:'Bungee Shade';
-	color: #F46868;
-	font-size: 72pt;
-	width:95%;
-	margin: 50px auto;
+.site-n-wrapper a:hover{
+	transform: all 200ms ease;
+	color:#36E0A1;
 }
 
 
-/*Screen too small message*/
+/*-----------Style for default gray overlay-------------*/
 
-@media screen and (max-width: 430px){
-	#too-small {
-		display:block;
-	}
+.overlay-wrapper {
+	position:relative;
+	overflow: hidden;
+}
+
+.overlay {
+	position:absolute;
+	height: 540px;
+	width: 100%;
+	background-color:rgba(0, 0, 0, 0.6);
+	transition: all 400ms ease-out;
+}
+
+.overlay-wrapper:hover .overlay {
+	opacity:0;
+}
+
+
+/*-----------Style for text on default gray overlay------------*/
+
+.proj-wrapper-sm {
+	margin-top:30%;
+	margin-left:23%;
+	margin-right:23%;
+}
+
+.proj-wrapper-lg {
+	margin-top: 15%;
+    margin-left: 40%;
+    margin-right:25%;
+}
+
+.proj-text {
+	margin-bottom:10px;
+}
+
+.proj-category {
+
+	text-transform: uppercase;
+	color:#36E0A1;
+	font-size: 18pt;
+}
+
+/*-----------Additional styling for emphasis-----------------*/
+
+.underline {
+	margin-top:0;
+	height:10px;
+	width:40%;
+	background-color: #FFFFFF;
 }

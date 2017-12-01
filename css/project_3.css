@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|Biryani|Biryani:200|Biryani:300|Biryani:600|Abel');
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: 'Source Serif Pro';
+}
+
+.back-button { 
+  width:50px;
+  height:30px;
+  position:relative;
+  top:150px;
+  left:22.5%;
+ }
+
+ .back-button-format {
+  font-size: 20px;
+  opacity: 0.7;
+ }
+
+.back-button-format:hover {
+  color:blue;
+}
+
+.project-margins {
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+
+.text-project {
+  margin: 0;
+  text-align: left;
+  line-height: 150%;
+  font-size: 18px;
+  color: #828282;
+  opacity: 0.8;
+}
+
+.section-container {
+  width: 55%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.project-header {
+  display: flex;
+}
+
+.project-header-title {
+  width: 35%;
+  padding-bottom: 10px;
+  border-bottom: 14px solid #6FCF97;
+}
+
+.project-header-description {
+  width: 65%;
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+/*body {
+  background-image: url("../img/geometry2_65opac.png");
+  background-repeat: repeat;
+}
+*/
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 130%;
+  font-size: 36px;
+  font-weight: normal;
+  font-family: 'Biryani';
+}
+
+.project-header-info {
+  display: flex;
+  margin-top: 50px;
+}
+
+.info-content {
+  flex-grow: 1;
+}
+
+h3 {
+  margin: 0;
+  color: #000000;
+  font-family: 'Abel';
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.project-role {
+  width: 35%;
+}
+.project-year {
+  width: 30%;
+  margin-left: 50px;
+}
+.project-tags {
+  width: 35%;
+}
+
+.project-prompt {
+  width: 50%;
+  margin:auto;
+  margin-top: 250px;
+  background-color: ;
+}
+
+.text-project-prompt {
+  font-family: 'Biryani';
+  font-weight: 300;
+  width: 80%;
+  margin: auto;
+  color: #000000;
+  font-size: 30px;
+  line-height: 150%;
+  z-index: 1;
+  /*position:absolute;*/
+  /*padding: 50px 0 50px 0;*/
+
+}
+
+.statement-box {
+  position:relative;
+   width: 35%;
+   height:150px;
+   background-color: #E4E4E2/*#F4F3F2*/;
+   margin:auto;
+   top:-180px;
+   left:30px;
+   z-index:-1;
+}
+
+.photo-asset-with-caption {
+  text-align: center;
+  color:#828282;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+img {
+  width:55%;
+}
+
+.link {
+  display:block;
+  text-align:center;
+  margin:0 auto;
+  background-color: #FFFFFF;
+  height:38px;
+  width:332px;
+  border: 2px solid black;
+  padding-top:5px;
+  box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 150px;
+  text-align: center;
+}
