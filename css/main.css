@@ -15,6 +15,7 @@ body {
 
 img {
 	width:100%;
+	min-width:560px;
 }
 
 h1 {
@@ -41,13 +42,13 @@ a {
 	transition: all .5s ease;
 }
 
+a:hover {
+	color:#36E0A1;
+}
+
 #caret {
 	text-decoration: none;
 	font-size: 18pt;
-}
-
-a:hover {
-	color:#36E0A1;
 }
 
 span {
@@ -94,7 +95,7 @@ header {
 	 
 }
 
-/*mouse-over hover effect for navigation links*/
+/*------mouse-over hover effect for navigation links-------*/
 #nav-link:hover {
 	color:#36E0A1; /*teal*/
 	border-color: #36E0A1;
@@ -111,7 +112,7 @@ header {
 	position:absolute;
 	background-color: #FBE14C;
 	width:10px;
-	height: 100vh;
+	height: 100vh;  /*based on % viewport height of the page*/
 }
 
 .vertical-top {
@@ -162,7 +163,6 @@ header {
 /*-------Base styles and layout for grid container----------*/
 .project-container {
 	display:grid;
-	/*align-items: center;*/
 	justify-content: stretch;
 	overflow: hidden;
 
@@ -181,7 +181,6 @@ header {
 	/*Margins and gutters*/
 	
 }
-
 
 /*--------Assign classes to grid-areas defined above---------*/
 .proj-1 {
@@ -297,4 +296,8 @@ header {
 	height:10px;
 	width:40%;
 	background-color: #FFFFFF;
+}
+
+.copyright {
+	font-size:26px;
 }

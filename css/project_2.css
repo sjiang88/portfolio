@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|Biryani|Biryani:200|Biryani:300|Biryani:600|Abel');
+@import url('https://fonts.googleapis.com/css?family=Fjord+One|Biryani|Biryani:200|Biryani:300|Biryani:600|Abel');
 
+/*base styles*/
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -7,15 +8,64 @@
 }
 
 p {
-  font-family: 'Source Serif Pro';
+  font-family: 'Abel';
+  color:#959595;
+  margin-bottom:0;
 }
 
+img {
+  width:55%;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 130%;
+  font-size: 36px;
+  font-weight: normal;
+  color:#454545;
+  font-family: 'Fjord One';
+
+}
+
+h3 {
+  margin: 0;
+  color: #000000;
+  font-family: 'Fjord One';
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+span {
+  color:#FFF86B;
+}
+
+/*back butten styling*/
 .back-button { 
   width:50px;
   height:30px;
   position:relative;
   top:150px;
   left:25%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a {
+  color:#4CBBF2;
+}
+
+footer {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.test {
+  padding-top:10vh;
+  background-color: #F5F5F5;
 }
 
 .back-button-format {
@@ -27,9 +77,10 @@ p {
   color:blue;
 }
 
-.project-margins {
-  margin-top: 250px;
-  margin-bottom: 100px;
+/*section styles of page*/
+
+.section-margins {
+  height:100vh;
 }
 
 .text-project {
@@ -37,7 +88,7 @@ p {
   text-align: left;
   line-height: 150%;
   font-size: 18px;
-  color: #828282;
+  color: #959595;
   opacity: 0.8;
 }
 
@@ -46,8 +97,13 @@ p {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+}
+
+.ln2 {
+  margin-top: 0;
+  margin-bottom:0;
 }
 
 /*formats the insights section*/
@@ -57,22 +113,50 @@ p {
 
 .wrapper-2 {
   position:relative;
-  top:2700px;
+  top:150vh;
 }
 
 #backdrop {
   position: absolute;
-  top:0;
 }
 
 .insight-section-wrapper {
-  /*background-image: url("../img/lksc.png");*/
   position: absolute;
-  top:230px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/sky-photo.png");
+  background-attachment: fixed;
+  top:0;
+  padding-bottom:15vh;
+  width:100%;
 }
 
-.spacer-elem {
-  height: 100px;
+.insight-section-final-wrapper {
+  padding-top:20vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/Result-2-background-overlay_3.png");
+  background-attachment: fixed;
+  top:0;
+  padding-bottom:30px;
+}
+
+.insight-wrapper {
+  margin-top:15vh;
+}
+
+.demo-img {
+  display:block;
+  width:750px;
+  margin:auto;
+  padding-top:80px;
+}
+
+.credit {
+  font-family: Abel;
+  font-size: 10pt;
+  color:#ABABAB;
+  text-align: right;
 }
 
 /*Specifies two similar sections, project header and insight sections
@@ -83,16 +167,43 @@ which both consist of a title and description section*/
   min-width: 800px;
 }
 
+.project-header-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height:30vh;
+
+  background-image: url("../img/soundings-wall-header.png");
+}
+
+.project-wrapper {
+  height:100vh;
+  background-color:#F5F5F5;
+}
+
 .project-header-title {
   width: 40%;
   padding-bottom: 10px;
-  border-bottom: 14px solid #4CBBF2;
 }
 
 .project-header-description {
-  width: 55%;
+  width: 90%;
   flex-grow: 1;
   margin-left: 50px;
+}
+
+/*style for vertical emphasis bar*/
+.emphasis-vertical {
+  padding-bottom:8px;
+  padding-left:30px;
+  border-left: 10px solid #4CBBF2;
+}
+
+.emphasis-vertical-blank {
+  padding-bottom:8px;
+  padding-left:30px;
+  border-left: 10px hidden #F5F5F5;
 }
 
 .insight-statement-title {
@@ -104,38 +215,15 @@ which both consist of a title and description section*/
   color:white;
 }
 
-.insight-statement-title h2 {
-  border-bottom: 14px solid #4CBBF2;
-}
-
-span {
-  color:#FFF86B;
-}
-
 .insight-statement-emphasis {
   font-family: 'Biryani';
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 200;
   color: #000000;
   line-height: 140%;
   z-index: 1;
   color:white;
-}
-
-/*
-body {
-  background-image: url("../img/geometry2_65opac.png");
-  background-repeat: repeat;
-;
-}*/
-
-h2 {
-  margin: 0;
-  padding: 0;
-  line-height: 130%;
-  font-size: 36px;
-  font-weight: normal;
-  font-family: 'Biryani';
+  margin-top:10px;
 }
 
 .project-header-info {
@@ -148,16 +236,8 @@ h2 {
   flex-grow: 1;
 }
 
-h3 {
-  margin: 0;
-  color: #000000;
-  font-family: 'Abel';
-  font-size: 22px;
-  font-weight: normal;
-  margin-bottom: 10px;
-}
 .project-role {
-  width: 40%;
+  width: 60%;
 }
 .project-year {
   width: 25%;
@@ -168,23 +248,27 @@ h3 {
 }
 
 .project-prompt {
-  width: 50%;
+  width: 63%;
   margin:auto;
-  margin-top: 250px;
+  padding-top: 35vh;
+  padding-bottom: 25vh;
 }
 
 .emphasis-statement {
-  font-family: 'Biryani';
-  font-weight: 300;
+  font-family: 'Abel';
   width: 75%;
   margin: auto;
-  color: #000000;
-  font-size: 30px;
+  color: #828282;
+  font-size: 20px;
   line-height: 150%;
   z-index: 1;
-  margin-bottom: 100px;
-
+  margin-bottom:30px;
 }
+
+.emphasis-statement-wrapper {
+   margin-bottom: 25vh;
+}
+
 
 .emphasis-statement-highlight {
  position:relative;
@@ -204,10 +288,6 @@ h3 {
   margin-bottom: 100px;
 }
 
-img {
-  width:55%;
-}
-
 .link {
   display:block;
   text-align:center;
@@ -220,22 +300,30 @@ img {
   box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
 }
 
-a {
-  text-decoration: none;
+.link-embed {
+  color:#9ECE45;
 }
 
-p a {
-  color:#4CBBF2;
+.link-embed:hover {
+  transition:all 0.4s ease;
+  color:#FFF86B;
 }
 
-footer {
-  margin-top: 150px;
-  text-align: center;
+.concept-descriptions-container {
+  margin:auto;
+  display:flex;
+  width:50%;
+  justify-content: space-evenly;
+}
+.concept-descriptions-item {
+  width:25%;
+  padding:20px;
 }
 
 /*Base styles and layout for grid container*/
 
-.container {
+.card-container {
+
   display: grid;
   width: 50%;
   min-width: 900px;
@@ -311,10 +399,11 @@ img {
   position: relative;
   top:0;
   left:0;
+  background-color:white;
 }
 
 .back {
-  top:-100%;
+  top:-104.5%;
   left:0;
   width:100%;
   height:100%;
@@ -325,12 +414,35 @@ img {
   padding-top:30%;
   padding-left:20px;
   padding-right:20px;
-  font-family: 'Biryani';
+  font-family: 'Abel';
   font-weight:200;
-  font-size:16px;
+  font-size:20px;
   line-height:150%;
 }
 
 .card:hover {
   transform:rotateY(180deg);
+}
+
+/*site map container*/
+.site-map-container {
+  display: flex;
+  justify-content: space-around;
+  width:20%;
+  margin:auto;
+  margin-top: 300px;
+  margin-bottom: 20px;
+}
+
+.site-map-item {
+  color:#959595;
+  font-family: Abel;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-right:20px;
+  padding-bottom: 10px;
+}
+
+.site-map-item:hover {
+  color:white;
 }
