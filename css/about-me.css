@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Abel|Fjord+One|Mate|Abel');
 
 /*---------------Base styles----------------*/
@@ -64,13 +63,13 @@ nav {
 }
 
 header {
-	background-image: url("../img/main-splash.png");
+	background-image: url("../img/IDEOmakeathon-3.png");
 	background-size:cover;
-	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height:100vh;
 }
+
 
 /*---------------Specific styles----------------*/
 
@@ -102,8 +101,8 @@ header {
 }
 
 #header-text {
-	margin-top:53vh;
-	margin-left:80px;
+	margin-top:73vh;
+	margin-left:100px;
 }
 
 /*----------yellow emphasis stripes-------------*/
@@ -129,18 +128,22 @@ header {
 	position:relative;
 }
 
+
 /*------Defines the subheader under the main splash----------*/
 
-.subhead-wrapper {
-	display:flex;
+.wrapper {
+	background-color: #F7F7F7; 
+	padding-top: 80px;
+	padding-bottom:100px;
 }
 
+
 .subhead {
-	margin-left: 80px;
+	margin-left: 100px;
 	margin-right:30px;
-	margin-top:45px;
-	width:45%;
-	color: #4F4F4F; /*gray*/
+	/*margin-top:65px;*/
+	margin-bottom:65px;
+	width:85%;
 }
 
 .subhead-emphasis-wrapper {
@@ -161,143 +164,131 @@ header {
 }
 
 /*-------Base styles and layout for grid container----------*/
-.project-container {
+
+.intro-text {
+	margin-top: 50px;
+	margin-left:150px;
+}
+
+.skills-container {
 	display:grid;
-	justify-content: stretch;
-	overflow: hidden;
+	justify-content:stretch;
+	overflow:hidden;
 
-	width:100%;
+	/*width:83%;*/
 
-	grid-template-rows:540px 540px 540px 540px; 
-	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr; /*6-column layout*/
+	grid-template-rows:180px 180px 180px 180px; 
+	grid-template-columns:1fr 1fr 1fr 1fr; /*4-column layout*/
 
 	/*Defines the state of the project tile images in grid format*/
 	grid-template-areas: 
-	"proj-1 proj-1 proj-2 proj-2 proj-2 proj-2"
-	"proj-3 proj-3 proj-3 proj-3 proj-4 proj-4"
-	"proj-5 proj-5 proj-6 proj-6 proj-6 proj-6"
-	"copyri	copyri site-n site-n site-n site-n";
+	"ar1 sk1 sk2 sk3"
+	"ar2 sk4 sk5 sk6"
+	"ar3 sk7 sk8 sk9"
+	"ar4 sk10 sk11 sk12";
 
-	/*Margins and gutters*/
-	
+	/*Margins and gutters and other styles*/
+	grid-column-gap: 60px;	
+	margin-right:150px;
+	margin-left:150px;
+	margin-top: 100px;
+	margin-bottom:100px;
+	background-color:white;
+	min-width:1000px;
 }
+
 
 /*--------Assign classes to grid-areas defined above---------*/
-.proj-1 {
-	grid-area: proj-1;
+
+.ar1 {
+	grid-area: ar1;
 }
 
-.proj-2 {
-	grid-area: proj-2;
+.sk1 {
+	grid-area: sk1;
 }
 
-.proj-3 {
-	grid-area: proj-3;
+.sk2 {
+	grid-area: sk2;
 }
 
-.proj-4 {
-	grid-area: proj-4;
+.sk3 {
+	grid-area: sk3;
 }
 
-.proj-5 {
-	grid-area: proj-5;
+.ar2 {
+	grid-area: ar2;
 }
 
-.proj-6 {
-	grid-area: proj-6;
+.sk4 {
+	grid-area: sk4;
 }
 
-.copyri{
-	grid-area: copyri;
+.sk5 {
+	grid-area: sk5;
 }
 
-.copyri p{
-	text-align: right;
-	margin-right:30px;
+.sk6 {
+	grid-area: sk6;
 }
 
-.site-n {
-	background-color: #DAE0DC;
-	grid-area: site-n;
+.ar3 {
+	grid-area: ar3;
 }
 
-.site-n-wrapper {
-	margin-left:30px;
-	margin-top:30px;
+.sk7 {
+	grid-area: sk7;
 }
 
-.site-n-wrapper a{
-	display:block;
-
-	font-family: Abel;
-	font-size: 24pt;
-	text-decoration: none;
-	text-transform:uppercase;
-	color:#4F4F4F;
-
-	margin-bottom:35px;
+.sk8 {
+	grid-area: sk8;
 }
 
-.site-n-wrapper a:hover{
-	transform: all 200ms ease;
-	color:#36E0A1;
+.sk9 {
+	grid-area: sk9;
+}
+
+.ar4 {
+	grid-area:ar4;
+}
+
+.sk10 {
+	grid-area: sk10;
 }
 
 
-/*-----------Style for default gray overlay-------------*/
 
-.overlay-wrapper {
-	position:relative;
-	overflow: hidden;
+/*--------Styling for grid items---------*/
+
+
+.skill {
+	margin:0;
+	min-width: 200px;
+	font-size:18pt;
 }
 
-.overlay {
-	position:absolute;
-	height: 540px;
-	width: 100%;
-	background-color:rgba(0, 0, 0, 0.6);
-	transition: all 400ms ease-out;
+.skill-area-header {
+	border-left: 8px solid; 
+	padding-left:15px;
+	margin:0;
 }
 
-.overlay-wrapper:hover .overlay {
-	opacity:0;
+.yellow {
+	border-left-color:#FBDF4C;
 }
 
-
-/*-----------Style for text on default gray overlay------------*/
-
-.proj-wrapper-sm {
-	margin-top:30%;
-	margin-left:23%;
-	margin-right:23%;
+.yellow-text {
+	color:#F2DA5F;
 }
 
-.proj-wrapper-lg {
-	margin-top: 15%;
-    margin-left: 40%;
-    margin-right:25%;
+.pink {
+	border-left-color: #E036D9;
 }
 
-.proj-text {
-	margin-bottom:10px;
+.pink-text {
+	color: #E036D9;
 }
 
-.proj-category {
-
-	text-transform: uppercase;
-	color:#36E0A1;
-	font-size: 18pt;
-}
-
-/*-----------Additional styling for emphasis-----------------*/
-
-.underline {
-	margin-top:0;
-	height:10px;
-	width:40%;
-	background-color: #FFFFFF;
-}
-
-.copyright {
-	font-size:26px;
+.teal {
+	border-left-color: #36E0A1;
 }
