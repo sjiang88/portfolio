@@ -92,7 +92,7 @@ header {
 	font-size:16pt;
 	text-transform: capitalize;
 
-	 
+
 }
 
 /*------mouse-over hover effect for navigation links-------*/
@@ -117,7 +117,7 @@ header {
 
 .vertical-top {
 	left: 0;
-    top: 350px;
+	top: 350px;
 }
 
 .vertical-bottom {
@@ -180,7 +180,14 @@ header {
 
 	/*Margins and gutters*/
 	
+
 }
+
+
+.test-format {
+	height:100%;
+}
+
 
 /*--------Assign classes to grid-areas defined above---------*/
 .proj-1 {
@@ -274,8 +281,8 @@ header {
 
 .proj-wrapper-lg {
 	margin-top: 15%;
-    margin-left: 40%;
-    margin-right:25%;
+	margin-left: 40%;
+	margin-right:25%;
 }
 
 .proj-text {

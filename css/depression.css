@@ -63,6 +63,11 @@ h3 {
 }
 
 
+/*special styling for section*/
+.section-wrapper-header {
+	min-height: 100vh;
+}
+
 /*base styling for section content*/
 .project-header{
 	display: flex;
@@ -135,7 +140,7 @@ h3 {
 	background-position: center;
 	background-repeat: no-repeat;
 
-	height:30vh;
+	height:200px;
 
 	background-image: url("../img/mom-gondolier-header.png");
 }
@@ -175,7 +180,8 @@ h3 {
 	width: 250px;
 	display: block;
 	margin:auto;
-	margin-top: 7vh;
+	margin-top: 70px;
+	margin-bottom:100px;
 	padding-bottom: 5px;
 	border-bottom: 7px solid #FAE35C;
 }
