@@ -42,7 +42,7 @@ h3 {
 
 /*base styling for each section*/
 .section-wrapper {
-	height:100vh;
+	min-height:100vh;
 }
 
 .yellow {
@@ -60,12 +60,6 @@ h3 {
 
 #process {
 	margin-bottom: 50px;
-}
-
-
-/*special styling for section*/
-.section-wrapper-header {
-	min-height: 100vh;
 }
 
 /*base styling for section content*/
@@ -90,9 +84,9 @@ h3 {
 	padding-bottom: 25vh;
 }
 
-#post-photo {
-	padding-top: 800px;
-	padding-bottom:50vh;
+.post-photo-project-wrapper {
+	width: 63%;
+	margin:auto;
 }
 
 .project-header-title {
@@ -225,15 +219,18 @@ img {
 
 
 .photo-asset-wrapper {
-	position:relative;
+	/*position:relative;*/
+	margin-top: 100px;
+	margin-bottom: 100px;
 	width:100%;
-	margin-bottom:50vh;
+	min-height: 100vh;
+	/*margin-bottom:50vh;*/
 }
 
 .photo-asset {
-	position:absolute;
-	margin-top: 10vh;
+/*	position:absolute;*/
 	text-align: center;
+	margin-bottom: 80px;
 	color:#828282;
 	width:100%;
 }
