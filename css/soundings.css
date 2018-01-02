@@ -62,8 +62,9 @@ footer {
   text-align: center;
 }
 
-.test {
-  padding-top:10vh;
+.result-section-wrapper {
+  padding-top:100px;
+  padding-bottom:100px;
   background-color: #F5F5F5;
 }
 
@@ -79,7 +80,7 @@ footer {
 /*section styles of page*/
 
 .section-margins {
-  height:100vh;
+  min-height:100vh;
 }
 
 .text-project {
@@ -96,7 +97,7 @@ footer {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10vh;
+  margin-top: 100px;
   margin-bottom: 3vh;
 }
 
@@ -106,13 +107,9 @@ footer {
 }
 
 /*formats the insights section*/
-.wrapper {
-  position: relative;
-}
 
 .wrapper-2 {
   position:relative;
-  top:150vh;
 }
 
 #backdrop {
@@ -120,19 +117,18 @@ footer {
 }
 
 .insight-section-wrapper {
-  position: absolute;
+ /* position: absolute;*/
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/sky-photo.png");
   background-attachment: fixed;
-  top:0;
-  padding-bottom:15vh;
+  padding-bottom:100px;
   width:100%;
 }
 
 
 .insight-section-final-wrapper {
-  padding-top:20vh;
+  padding-top:50px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/Result-2-background-overlay_3.png");
@@ -142,7 +138,7 @@ footer {
 }
 
 .insight-wrapper {
-  margin-top:15vh;
+  margin-top:100px;
 }
 
 .demo-img {
@@ -172,18 +168,18 @@ which both consist of a title and description section*/
   background-position: center;
   background-repeat: no-repeat;
 
-  height:30vh;
+  height:200px;
 
   background-image: url("../img/soundings-wall-header.png");
 }
 
 .project-wrapper {
-  height:100vh;
+  min-height:100vh;
   background-color:#F5F5F5;
 }
 
 .project-header-title {
-  width: 40%;
+  width: 60%;
   padding-bottom: 10px;
 }
 
@@ -235,7 +231,7 @@ which both consist of a title and description section*/
 }
 
 .project-role {
-  width: 35%;
+  width: 60%;
 }
 .project-year {
   width: 25%;
@@ -248,15 +244,15 @@ which both consist of a title and description section*/
 .project-prompt {
   width: 63%;
   margin:auto;
-  padding-top: 35vh;
-  padding-bottom: 25vh;
+ padding-top:150px;
+ padding-bottom:150px;
 }
 
 .emphasis-statement {
   font-family: 'Abel';
   width: 75%;
   margin: auto;
-  color: #828282;
+  color: #959595;
   font-size: 20px;
   line-height: 150%;
   z-index: 1;
@@ -312,6 +308,7 @@ which both consist of a title and description section*/
   display:flex;
   width:50%;
   justify-content: space-evenly;
+  padding-bottom: 100px;
 }
 .concept-descriptions-item {
   width:25%;
