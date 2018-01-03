@@ -337,7 +337,7 @@ header {
 	/*----------header image-------------*/
 
 	header {
-		min-width: 450px;
+		/*min-width: 450px;*/
 	}
 
 	/*----------header and subheader fonts resize-------------*/
