@@ -1,6 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Abel|Fjord+One|Mate|Abel');
 
+
+/*--------------Construction----------------*/
+.construction-notice {
+	text-align: center;
+	/*height: 50px;*/
+	width:100%;
+	background-color:#FBE14C;
+}
+
+.construction-notice p {
+	margin:0;
+	font-family: Abel;
+	font-size:24pt;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
 /*---------------Base styles----------------*/
 * {
 	box-sizing: border-box;
@@ -73,6 +90,10 @@ header {
 	height:100vh;
 }
 
+
+
+
+
 /*---------------Specific styles----------------*/
 
 .special-white {
@@ -103,7 +124,7 @@ header {
 }
 
 #header-text {
-	margin-top:53vh;
+	margin-top:350px;
 	margin-left:80px;
 }
 
