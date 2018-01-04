@@ -70,7 +70,8 @@
   and (orientation: portrait) { 
 
     header {
-      background-image: url('../img/landing-splash-lower-res.png')
+      /*background-image: url('../img/landing-splash-lower-res.png')*/
+      height:667px;
     }
 
 }
