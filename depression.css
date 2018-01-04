@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Fjord+One|Biryani|Biryani:200|Biryani:300|Biryani:600|Abel');
+
+
+/*base styles*/
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: Abel;
+}
+
+a {
+	text-decoration:none;
+}
+
+p {
+	margin-bottom: 0;
+	margin-top: 1.5em;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	line-height: 130%;
+	font-size: 36px;
+	font-weight: normal;
+	color:#454545;
+	font-family: 'Fjord One';
+}
+
+h3 {
+	margin: 0;
+	color: #000000;
+	font-family: 'Fjord One';
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+/*base styling for each section*/
+.section-wrapper {
+	min-height:100vh;
+}
+
+.yellow {
+	background-color: #FAE35C;
+}
+
+.grey{
+	background-color: #F5F5F5;
+}
+
+#white {
+  color:white;
+}
+
+
+#process {
+	margin-bottom: 50px;
+}
+
+/*base styling for section content*/
+.project-header{
+	display: flex;
+	min-width: 800px;
+}
+
+.section-container {
+	width: 50%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vh;
+	margin-bottom: 3vh;
+}
+
+.project-wrapper {
+	width: 63%;
+	margin:auto;
+	padding-top: 26vh;
+	padding-bottom: 25vh;
+}
+
+.post-photo-project-wrapper {
+	width: 63%;
+	margin:auto;
+}
+
+.project-header-title {
+	width: 60%;
+	padding-bottom: 10px;
+}
+
+
+.emphasis-vertical {  /*the colored vertical bar that marks each section*/
+	padding-bottom:8px;
+	padding-left:30px;
+	border-left: 10px solid #FAE35C; /*yellow*/
+}
+
+.emphasis-vertical-blank {
+	padding-bottom:8px;
+	padding-left:40px;
+}
+.emphasis-vertical-pink {
+	padding-bottom:8px;
+	padding-left:30px;
+	border-left: 10px solid #F45E9D;
+}
+
+.project-header-description {
+	width: 90%;
+	flex-grow: 1;
+	margin-left: 50px;
+}
+
+.text-project {
+	margin: 0;
+	text-align: left;
+	line-height: 150%;
+	font-family:Abel;
+	font-size: 18px;
+	color: #959595;
+	opacity: 0.8;
+}
+
+
+/*landing section only*/
+.project-header-img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	height:200px;
+
+	background-image: url("../img/mom-gondolier-header.png");
+}
+
+.credit {
+	font-family: Abel;
+	font-size: 10pt;
+	color:#ABABAB;
+	text-align: right;
+}
+
+.project-header-info {
+	display: flex;
+	min-width: 800px;
+	margin-top: 50px;
+}
+
+.project-role {
+	width: 60%;
+}
+.project-year {
+	width: 25%;
+	margin-left: 50px;
+}
+.project-tags {
+	width: %;
+}
+
+.info-content {
+	flex-grow: 1;
+}
+
+/*project link styles*/
+
+.project-link {
+	text-align: center;
+	width: 250px;
+	display: block;
+	margin:auto;
+	margin-top: 70px;
+	margin-bottom:100px;
+	padding-bottom: 5px;
+	border-bottom: 7px solid #FAE35C;
+}
+
+#pink {
+	border-bottom-color: #F45E9D;
+}
+
+.project-link-style {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Abel;
+	font-size: 16pt;
+	color:#454545; /*darker grey*/
+}
+
+.project-link-style:hover {
+	transition:all 0.4s ease;;
+	color:#FAE35C;
+}
+
+/*Non-landing page sections*/
+
+.emphasis-statement {
+	font-family: 'Abel';
+	width: 75%;
+	margin: auto;
+	color: #333333;
+	font-size: 22px;
+	line-height: 150%;
+	z-index: 1;
+	margin-bottom:30px;
+}
+
+
+/*Styling for photos*/ 
+
+img {
+	width:50%;
+}
+
+
+.photo-asset-wrapper {
+	/*position:relative;*/
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width:100%;
+	min-height: 100vh;
+	/*margin-bottom:50vh;*/
+}
+
+.photo-asset {
+/*	position:absolute;*/
+	text-align: center;
+	margin-bottom: 80px;
+	color:#828282;
+	width:100%;
+}
+
+.photo-caption {
+	padding-top: 5px;
+	padding-right:25%;
+	margin:0;
+	text-align: right;
+	font-size:;
+	color:#828282;
+}
+
+.alt-photo-asset {
+	display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 70%;
+}
+
+.diagram {
+	padding-top:40px;
+	padding-bottom: 20px;
+	width:55%;
+	display:block;
+	margin:0 auto;
+}
+
+/*styling for insights section*/
+
+
+.insight-section-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/mom-sky-background.png");
+  background-attachment: fixed;
+  top:0;
+  padding-bottom: 10vh;
+}
+
+.ln2 {
+  margin-top: 0;
+  margin-bottom:0;
+}
+
+.insight-statement-title {
+  width: 40%;
+  padding-bottom: 20px;foot
+}
+
+.insight-statement-emphasis {
+  font-family: 'Biryani';
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 140%;
+  z-index: 1;
+}
+
+span {
+	color:#FAE35C;
+}
+
+/*site map container*/
+.site-map-container {
+  display: flex;
+  justify-content: space-around;
+  width:20%;
+  margin:auto;
+  margin-bottom: 20px;
+}
+
+.site-map-item {
+  color:#959595;
+  font-family: Abel;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-right:20px;
+  padding-bottom: 10px;
+}
+
+.site-map-item:hover {
+  color:white;
+}
+
+footer {
+ padding-bottom: 30px;
+ text-align: center;
+ color:#959595;;
+}
