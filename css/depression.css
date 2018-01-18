@@ -189,13 +189,15 @@ h3 {
 	text-transform: uppercase;
 	font-family: Abel;
 	font-size: 16pt;
-	color:#454545; /*darker grey*/
+	color:#454545; 
 }
 
 .project-link-style:hover {
 	transition:all 0.4s ease;;
 	color:#FAE35C;
 }
+
+
 
 /*Non-landing page sections*/
 
